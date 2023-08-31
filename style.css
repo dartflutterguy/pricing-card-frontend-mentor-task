@@ -1,0 +1,153 @@
+html {
+  box-sizing: border-box;
+  font-family: karla;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+body {
+  padding: 25px;
+}
+
+#main-container {
+  box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.20);
+ 
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#upper-section {
+  height: 40%;
+  width: 100%;
+  padding: 30px;
+}
+
+#heading {
+  margin-bottom: 20px;
+  color: #2ab2af;
+}
+
+#upper-section h4 {
+  margin-bottom: 20px;
+  color: #c0df34;
+}
+
+#upper-section p {
+  color: #98a6bd;
+}
+
+#upper-section h4 {
+  margin-bottom: 15px;
+}
+
+#lower-section {
+  height: auto;
+  width: 100%;
+}
+
+#lower-left {
+  background-color: #2AB2AF;
+  height: auto;
+  width: 100%;
+  display: inline-block;
+  padding: 30px;
+  color: white;
+}
+
+#lower-left h4 {
+  margin-bottom: 10px;
+}
+
+#price-container {
+  margin-bottom: 10px;
+}
+
+#amount {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+#amount-duration {
+  display: inline-block;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  position: relative;
+  top: -4px;
+}
+
+#access {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+#lower-right {
+  background-color: #2EBFBD;
+  height: auto;
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 30px;
+  color: white;
+}
+
+#lower-right h4 {
+  margin-bottom: 10px;
+}
+
+#lower-right ul {
+  padding: 0;
+  list-style: none;
+  opacity: 0.9;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+h3, h4, p {
+  margin: 0;
+}
+
+button {
+  margin-top: 25px;
+  color: white;
+  border: none;
+  background-color: #c0df34;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #C9EB36;
+  cursor: pointer;
+  transform: scale(1.06);
+}
+
+@media (min-width: 576px) {
+  #main-container {
+    width: auto;
+    height: 450px; 
+  }
+  
+  #lower-left, #lower-right {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+/* based on instructions for this project the breakpoint below is not needed as you can see both breakpoints are having same value. Adding it was for learning reasons to understand how to implement several breakpoints*/
+
+@media (min-width: 992px) {
+  #main-container {
+    width: auto;
+    height: 450px; 
+  }
+  #lower-left, #lower-right {
+    width:50%;
+    height: 100%;
+  }  
+}
