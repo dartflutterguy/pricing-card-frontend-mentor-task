@@ -20,7 +20,7 @@ body {
 }
 
 #upper-section {
-  height: 40%;
+  height: auto;
   width: 100%;
   padding: 30px;
 }
