@@ -46,15 +46,16 @@ body {
 #lower-section {
   height: auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #lower-left {
   background-color: #2AB2AF;
   height: auto;
-  width: 100%;
-  display: inline-block;
   padding: 30px;
   color: white;
+  flex-basis: 50%;
 }
 
 #lower-left h4 {
@@ -63,21 +64,21 @@ body {
 
 #price-container {
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
 #amount {
-  display: inline-block;
   font-size: 1.8rem;
   font-weight: 700;
-  margin-right: 5px;
+  flex-basis: 1;
 }
 
 #amount-duration {
-  display: inline-block;
+  margin-left: 5px;
+  flex-basis: 1;
   font-size: 0.8rem;
   opacity: 0.7;
-  position: relative;
-  top: -4px;
 }
 
 #access {
@@ -88,11 +89,9 @@ body {
 #lower-right {
   background-color: #2EBFBD;
   height: auto;
-  width: 100%;
-  display: inline-block;
-  vertical-align: top;
   padding: 30px;
   color: white;
+  flex-basis: 50%;
 }
 
 #lower-right h4 {
@@ -130,24 +129,33 @@ button:hover {
 @media (min-width: 576px) {
   #main-container {
     width: auto;
-    height: 450px; 
-  }
-  
-  #lower-left, #lower-right {
-    width: 50%;
     height: 100%;
   }
+  
+  #lower-section {
+   display: flex;
+   flex-direction: row;
+  }
+ 
+  #lower-left {
+    flex-basis: 50%;
+    min-width: 0;
+  }
+  
+  #lower-right {
+    flex-basis: 50%;
+    min-width: 0;
+    
+  }
+  
+  #lower-right ul {
+    white-space: normal;
+  }
+  
 }
 
 /* based on instructions for this project the breakpoint below is not needed as you can see both breakpoints are having same value. Adding it was for learning reasons to understand how to implement several breakpoints*/
 
 @media (min-width: 992px) {
-  #main-container {
-    width: auto;
-    height: 450px; 
-  }
-  #lower-left, #lower-right {
-    width:50%;
-    height: 100%;
-  }  
+
 }
